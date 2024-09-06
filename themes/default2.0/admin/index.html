@@ -55,7 +55,7 @@
 				  <tr><td>ID</td><td>标题</td><td>创建日期</td></tr>
 			</table>
 			<input type="hidden"  name="page" id="page" value='1'>
-			<a id="loadmore" class="btn btn-default">加载更多...</a>
+			<a id="loadmore" class="btn btn-default">Load More...</a>
 		</div> 
 	</div>
 	<div class="tab-pane fade in active" id="new">
@@ -75,7 +75,7 @@
 					<input type="text" class="form-control" name="link" id="link" placeholder="" required="true">
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">创建日期</label>
+					<label for="exampleInputEmail2">Create Date</label>
 					<input type="datetime-local" class="form-control" id="createDate" name="createDate" placeholder=""  required="true">
 				</div>
 				<div class="form-group">
@@ -103,7 +103,7 @@
 						<option value="always" >always</option>
 					    </select>
 				</div>
-					<a  tabindex="0"  role="button"  type="submit" id="btn_saveAddNew" class="btn btn-default" onclick="saveAddNew()">保存</a>
+					<a  tabindex="0"  role="button"  type="submit" id="btn_saveAddNew" class="btn btn-default" onclick="saveAddNew()">Save</a>
 					
 				<div id="content"><textarea style="display:none;"></textarea></div>
 			</form>
@@ -115,19 +115,19 @@
 		<div class="container" >
 			<form id="configForm" role="form" >
 				<div class="form-group">
-				    <label for="name">分类, 例:<code>["类别A","类别B","类别C","类别D"]</code></label>
+				    <label for="name">Category, 例:<code>["类别A","类别B","类别C","类别D"]</code></label>
 					<textarea class="form-control" id="WidgetCategory" name="WidgetCategory" rows="3" placeholder='["分类A","分类B"]'></textarea>
 				</div>
 	
 				<div class="form-group">
-				    <label for="name">菜单, 例:<code>[{"title":"技术文章","url":"/category/技术文章"},{"title":"管理","url":"/admin"}]</code></label>
+				    <label for="name">Menu, 例:<code>[{"title":"技术文章","url":"/category/技术文章"},{"title":"Admin","url":"/admin"}]</code></label>
 					<textarea class="form-control" id="WidgetMenu" name="WidgetMenu" rows="5"  placeholder='[
 	{"title":"菜单A"	,"url":"/category/菜单A"},
 	{"title":"菜单B"	,"url":"/category/菜单B"}
 ]'></textarea>
 				</div>
 				<div class="form-group">
-				    <label for="name">其他链接, 例:<code>[{"title":"我的好友","url":"https://blog.gezhong.vip/"},{"title":"谷歌","url":"https://www.google.com/"}]</code></label>
+				    <label for="name">其他链接, 例:<code>[{"title":"我的好友","url":"https://blog.gezhong.vip/"},{"title":"Google","url":"https://www.google.com/"}]</code></label>
 					<textarea class="form-control" id="WidgetLink" name="WidgetLink" rows="5"  placeholder='[
 	{"title":"好友"	,"url":"https://blog.gezhong.vip/"},
 	{"title":"谷歌"	,"url":"https://www.google.com/"}
@@ -139,12 +139,12 @@
 
 			<form id="importForm" role="form" >
 				<div class="form-group">
-				    <label for="name">导出/导入</label>
+				    <label for="name">Export/Import</label>
 					<textarea class="form-control" id="importJson" name="importJson" rows="3" placeholder='复制完整的导出json'></textarea>
 				</div>
 
-				<a  tabindex="0"  role="button"  type="submit" id="btn_import" class="btn btn-default" onclick="importBlog()">导入</a>
-				<a  tabindex="0"  role="button"  type="submit" id="btn_export" class="btn btn-default"  href="/admin/export/" >导出</a>
+				<a  tabindex="0"  role="button"  type="submit" id="btn_import" class="btn btn-default" onclick="importBlog()">Import</a>
+				<a  tabindex="0"  role="button"  type="submit" id="btn_export" class="btn btn-default"  href="/admin/export/" >Export</a>
 			</form>
 
 			
