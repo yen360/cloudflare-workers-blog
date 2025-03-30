@@ -2,7 +2,7 @@
 const OPT = {
     "user" : "admin", //后台密码请修改
     "password" : "yourSelfPwd", //后台密码
-    "siteDomain" : "blog.gezhong.vip",// 域名(不带https 也不带/)
+    "siteDomain" : "blog.steventan.work",// 域名(不带https 也不带/)
     "siteName" : "CF workers blog",//博客名称
     "siteDescription":"A Blog Powered By Cloudflare Workers and KV",//博客描述
     "keyWords":"cloudflare,KV,workers,blog",//关键字
@@ -24,7 +24,7 @@ const OPT = {
     "otherCodeC":``,//其他参数A
     "otherCodeD":``,//其他参数A
     "otherCodeE":``,//其他参数A
-    "copyRight" :`Powered by <a href="https://www.cloudflare.com">CF Workers</a> & <a href="https://blog.gezhong.vip">CF-Blog </a>`,//自定义版权信息,建议保留大公无私的 Coudflare 和 作者 的链接
+    "copyRight" :`Powered by <a href="https://www.cloudflare.com">CF Workers</a> & <a href="https://blog.steventan.work/">CF-Blog </a>`,//自定义版权信息,建议保留大公无私的 Coudflare 和 作者 的链接
 "robots":`User-agent: *
 Disallow: /admin`//robots.txt设置
 };
